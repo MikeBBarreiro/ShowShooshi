@@ -40,7 +40,7 @@ $ npm test
 ```
 
 ### Contributors
-- [Chyld Medford](https://github.com/chyld)
+- [Michael Barreiro](https://github.com/mikebbarreiro)
 
 ### License
 [MIT](LICENSE)
