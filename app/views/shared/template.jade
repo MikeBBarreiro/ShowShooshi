@@ -4,12 +4,17 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Template
+    title ShowShooshi
     link(href='/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/css/demo.css')
+    link(rel='stylesheet', href='/css/effect1.css')
     link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/normalize.css')
+    script(src='/js/vendor/modernizr.custom.js')
+    script(src='/js/vendor/pathLoader.js')
+    script(src='/js/vendor/classie.js')
   body
-    include nav
     .container-fluid
       .row
         .col-xs-12
@@ -22,6 +27,9 @@ html(lang='en')
     script(src='/js/vendor/moment.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
     script(src='/js/user/main.js')
+    script(src='/js/vendor/async.js')
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeoZ11zwgmFhUjuUCMN0tnhsZStRQ7xbg&sensor=true")
+    script(src='/js/vendor/main.js')
 
     block scripts
 
