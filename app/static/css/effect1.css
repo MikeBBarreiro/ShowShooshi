@@ -51,7 +51,7 @@
 }
 
 .ip-loader {
-	bottom: 20%;
+	bottom: 10%;
 }
 
 
@@ -62,9 +62,10 @@
 
 
 .ip-header .ip-logo img {
-	min-width: 320px;
-	max-width: 480px;
-	width: 25%;
+  margin-top: -200px;
+	min-width: 120px;
+	max-width: 680px;
+	width: 50%;
 }
 /*
 .ip-header .ip-logo svg path {
@@ -93,6 +94,10 @@
 	padding: 160px 0 10em 0;
 	max-width: 1100px;
 	width: 90%;
+}
+
+h2 {
+  margin-top: 50px;
 }
 
 .ip-main h2 {
