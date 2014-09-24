@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(ng-app='showshooshi', lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -14,7 +14,7 @@ html(lang='en')
     script(src='/js/vendor/modernizr.custom.js')
     script(src='/js/vendor/pathLoader.js')
     script(src='/js/vendor/classie.js')
-  body
+  body(ng-controller='MainController')
     .container-fluid
       .row
         .col-xs-12
@@ -26,10 +26,15 @@ html(lang='en')
     script(src='/js/vendor/underscore-contrib.min.js')
     script(src='/js/vendor/moment.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
-    script(src='/js/user/main.js')
+    //-script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js')
+    script(src='/js/user/home.js')
+    //-script(src='/js/user/main.js')
     script(src='/js/vendor/async.js')
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeoZ11zwgmFhUjuUCMN0tnhsZStRQ7xbg&sensor=true")
+    script(type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places")
     script(src='/js/vendor/main.js')
+    script(src='/bower_components/angular/angular.js')
+    script(src='/bower_components/jquery/dist/jquery.js')
 
     block scripts
 

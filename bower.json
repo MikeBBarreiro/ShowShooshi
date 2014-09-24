@@ -1,0 +1,14 @@
+{
+  "name": "ShowShooshi",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MikeBBarreiro/ShowShooshi",
+  "authors": [
+    "Michael Barreiro <Mikeb_barreiro@yahoo.com>"
+  ],
+  "description": "ShowShooshi",
+  "main": "app/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.3.0-rc.0"
+  }
+}

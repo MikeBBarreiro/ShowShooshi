@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -98,6 +100,7 @@
 
 h2 {
   margin-top: 50px;
+  font-family: 'Lato', sans-serif;
 }
 
 .ip-main h2 {
