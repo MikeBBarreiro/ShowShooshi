@@ -15,22 +15,23 @@ block content
             path#ip-loader-circle.ip-loader-circle(d='M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z')
       // main content
       div.ip-main
-        h2 Find a place to eat 
+        h2 Find a place to eat &nbsp;
           span.hue-color-wheel Sushi!
         #map.browser.clearfix
+        button.animated.flipInY#toggle_traffic.btn.btn-info.outline-inward(style='-webkit-animation-delay: 4s;') ShowTraffic
       .row
         .col-xs-4
         .col-xs-4
+          input#lat(ng-model='Lat', type="hidden", name="lat")
+          input#lng(ng-model='Lng', type="hidden", name="lng")
+          input.form-control#name(type='text', name='name', autofocus=true, placeholder='Nashville')
+          button.btn.btn-success(type='submit') ShowShooshi!
           form(role='form')
-            input#lat(type="hidden", name="lat")
-            input#lng(type="hidden", name="lng")
             .form-group
               label(for='name')
-              input.form-control#name(type='text', name='name', autofocus=true, placeholder='Nashville')
-            .form-group
+            //-.form-group
               label(for='name')
               input.form-control#type(type='text', name='type', placeholder='Type')
-            button.btn.btn-success(type='submit') ShowShooshi!
         .col-xs-4
     // /container
 

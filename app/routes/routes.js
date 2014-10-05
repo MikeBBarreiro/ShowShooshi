@@ -24,6 +24,7 @@ module.exports = function(app, express){
   app.use(debug.info);
 
   app.get('/', home.index);
+  //app.post('/', home.index);
 
 
   //app.get('/login', users.login);
