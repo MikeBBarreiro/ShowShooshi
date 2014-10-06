@@ -17,13 +17,7 @@
   console.log('LAT & LNG HERE---->', lat, lng);
 
 
-  function initialize(){
-    //var city = $('#name').val();
-    //var name = document.getElementById('name').value;
-    //var lat = document.getElementById('lat').value;
-    //var lng = document.getElementById('lng').value;
-    //var pyrmont = new google.maps.LatLng(29.9511, -90.0715);
-    //var pyrmont = new google.maps.LatLng(-33.8665433, 151.1956316);
+  function initialize(lat, lng){
     if(lat && lng){
       mapCity = new google.maps.LatLng(lat, lng);
     }else{
@@ -44,6 +38,8 @@
     var service = new google.maps.places.PlacesService(map);
     service.textSearch(request, callback);
   }
+//-------------initialize--end--------------\\
+
 
   function callback(results, status){
     if (status === google.maps.places.PlacesServiceStatus.OK){
@@ -135,6 +131,7 @@
       $('#lng').val(lng);
 
       centerCity(lat, lng);
+      initialize(lat, lng);
     });
 
     event.preventDefault();
