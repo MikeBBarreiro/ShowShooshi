@@ -32,7 +32,7 @@
 
     map = new google.maps.Map(document.getElementById('map'), {
       center: mapCity,
-      zoom: 13
+      zoom: 12
     });
 
     var request = {
@@ -66,8 +66,7 @@
       infowindow.open(map, this);
     });
   }
-  //traffic_toggle
-
+  //--------------traffic_toggle-----------------\\
   var trafficLayer = new google.maps.TrafficLayer();
   $('#toggle_traffic').click(function(){
     if(trafficLayer.getMap()){
@@ -76,6 +75,24 @@
       trafficLayer.setMap(map);
     }
   });
+//---------------traffic_toggle_end----------------\\
+
+//-----------------weather_toggle----------------------------\\
+  var weatherLayer =new google.maps.weather.WeatherLayer({
+    temperatureUnits: google.maps.weather.TemperatureUnit.CELSIUS
+  }),
+  cloudLayer = new google.maps.weather.CloudLayer();
+
+  $('#toggle_weather').click(function(){
+    if(weatherLayer.getMap() || cloudLayer.getMap()){
+      weatherLayer.setMap(null);
+      cloudLayer.setMap(null);
+    }else{
+      weatherLayer.setMap(map);
+      cloudLayer.setMap(map);
+    }
+  });
+//--------------weather_toggle_end-----------------------------\\
 
 /*
   function codeLatLng(){
@@ -123,7 +140,7 @@
     });
 
     event.preventDefault();
-    loadScript();
+    //loadScript();
   }
 /*
   function loadScript(){
