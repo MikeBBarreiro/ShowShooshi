@@ -79,7 +79,7 @@
 
 //-----------------weather_toggle----------------------------\\
   var weatherLayer =new google.maps.weather.WeatherLayer({
-    temperatureUnits: google.maps.weather.TemperatureUnit.CELSIUS
+    temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
   }),
   cloudLayer = new google.maps.weather.CloudLayer();
 
