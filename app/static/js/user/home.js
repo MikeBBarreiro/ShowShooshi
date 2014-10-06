@@ -134,25 +134,17 @@
       $('#lat').val(lat);
       $('#lng').val(lng);
 
-     // $('form').submit();
-      //var data = $('form').serialize();
-      return lat,lng;
+      centerCity(lat, lng);
     });
 
     event.preventDefault();
-    //loadScript();
-  }
-/*
-  function loadScript(){
-    var script  = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src  = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
-      'callback=initialize';
-    document.body.appendChild(script);
   }
 
-  window.onload = loadScript;
-*/
+  function centerCity(lat, lng){
+    map.setCenter({lat:lat, lng:lng});
+  }
+
+
 /*
  function getPositions(){
     var positions = $('form input').toArray().map(function(input){
