@@ -1,6 +1,7 @@
 extends ../shared/template
 block content
-  h2.animated.fadeInDown(style='-webkit-animation-delay: 3.55s;') ショー寿司
+  h2.animated.fadeInDown(style='-webkit-animation-delay: 3.45s;') ショー寿司
+  .japDivide
   div#ip-container.ip-container
       // initial header
       header.ip-header
@@ -17,10 +18,12 @@ block content
       div.ip-main
         h2 Find a place to eat &nbsp;
           span.hue-color-wheel Sushi!
+
         #map.browser.clearfix
-        button.animated.flipInY#toggle_traffic.btn.btn-info.outline-inward(style='-webkit-animation-delay: 4s;') ShowTraffic
-        button.animated.flipInY#toggle_weather.btn.btn-info.outline-inward(style='-webkit-animation-delay: 4s;') ShowWeather
-      .input_container.animated.zoomIn(style='-webkit-animation-delay: 4s;')
+
+        button#toggle_traffic.btn.btn-info.outline-inward.wp2  ShowTraffic
+        button#toggle_weather.btn.btn-info.outline-inward.wp3 ShowWeather
+      .input_container.wp1
         .row
           .col-xs-4
           .col-xs-4
@@ -36,6 +39,19 @@ block content
               input.form-control#type(type='text', name='type', placeholder='Type')
           .col-xs-4
     // /container
+  //-.container.demo-2
+  //-.content
+    //-#large-header.large-header
+      //-canvas#demo-canvas
+    //-.codrops-top.clearfix
+      //-a.codrops-icon.codrops-icon-prev(href='http://tympanus.net/Development/OffCanvasMenuEffects/')
+        //-span Previous Demo
+      //-a.codrops-icon.codrops-icon-drop(href='http://tympanus.net/codrops/?p=20153')
+        //-span Back to the Codrops Article
+    //-.codrops-header
+  //-// Related demos
+  //-section.related
+
 
 block scripts
   script(src='/js/user/home.js')

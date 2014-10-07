@@ -5,7 +5,7 @@
 
 
   $(document).ready(function(){
-    $('button').click(geocode);
+    $('#toggle_showshooshi').click(geocode);
   });
 
   var map,
@@ -31,7 +31,7 @@
 
     var request = {
       location: mapCity,
-      radius: 5000,
+      radius: 50000,
       query: 'sushi restaurant'
     };
     infowindow = new google.maps.InfoWindow();
