@@ -54,6 +54,7 @@
       marker = new google.maps.Marker({
         icon: '/img/mapMarker.png',
         map: map,
+        animation: google.maps.Animation.DROP,
         position: placeLoc
       });
 
