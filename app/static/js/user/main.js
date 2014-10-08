@@ -2,6 +2,7 @@
   'use strict';
 
   $(document).ready(function(){
+    //$('#toggle_showshooshi').click(onClick);
   });
 ////////////////// WAYPOINTS START ///////////////////
 
@@ -10,34 +11,32 @@
   }, {
     offset: '100%'
   });
+
   $('.wp2').waypoint(function(){
-    $('.wp2').addClass('animated flipInY');
+    $('.wp2').addClass('animated fadeInRightBig');
   }, {
     offset: '100%'
   });
+
   $('.wp3').waypoint(function(){
-    $('.wp3').addClass('animated flipInY');
+    $('.wp3').addClass('animated fadeInRightBig');
   }, {
     offset: '100%'
   });
+
   $('.wp4').waypoint(function(){
-    $('.wp4').addClass('animated fadeInDown');
+    $('.wp4').addClass('animated bounceInDown');
   }, {
-    offset: '75%'
+    offset: '100%'
   });
-  $('.wp5').waypoint(function(){
-    $('.wp5').addClass('animated fadeInUp');
-  }, {
-    offset: '75%'
-  });
-  $('.wp6').waypoint(function(){
-    $('.wp6').addClass('animated fadeInDown');
-  }, {
-    offset: '75%'
-  });
+
 ////////////////// WAYPOINTS END ///////////////////
 
-
+  //function onClick(){
+    //debugger;
+    //var bleep = new Audio();
+    //bleep.src = '/audio/bleep.mp3';
+  //}
 
 })();
 

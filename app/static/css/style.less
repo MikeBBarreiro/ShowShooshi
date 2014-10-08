@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:300);
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
 
 @base: #f938ab;
 
@@ -17,16 +18,19 @@ body{
 h2 {
   font-family: 'Lato', sans-serif;
   color: #FF424C;
+  text-shadow: 5px 5px 20px black;
 }
 
 .japDivide {
   background-color: #FF424C;
   height: 3px;
   width: 155px;
+  text-shadow: 5px 5px 20px black;
 }
 
 span {
   font-family: 'Comfortaa', cursive;
+  text-shadow: 0px 0px 10px yellow;
 }
 
 input.ng-valid {
@@ -49,18 +53,33 @@ input.ng-invalid {
 }
 
 #toggle_traffic{
-  margin: 5px;
-  margin-left: 11%;
+  margin-top: 1px;
+  margin-left: 8%;
+  background-color: #FF424C;
+  width: 95px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
 }
 
 #toggle_weather{
-  margin: 5px;
-  margin-left: 6%;
+  margin-left: 2%;
+  /*margin-top: -25px;*/
+  background-color: #FF424C;
+  width: 95px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
 }
 
 #toggle_showshooshi {
   margin: 5px;
   margin-left: 35%;
+  font-family: 'Lato', sans-serif;
 }
 
 .hue-color-wheel {
@@ -123,4 +142,8 @@ utline-inward {
   bottom: -2px;
   left: -2px;
   opacity: 1;
+}
+
+.footerButton {
+  display: inline-block;
 }

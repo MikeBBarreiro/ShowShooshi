@@ -1,6 +1,6 @@
 extends ../shared/template
 block content
-  h2.animated.fadeInDown(style='-webkit-animation-delay: 3.45s;') ショー寿司
+  h2.animated.fadeInDown(style='-webkit-animation-delay: 3.75s;') ショー寿司
   .japDivide
   div#ip-container.ip-container
       // initial header
@@ -21,8 +21,8 @@ block content
 
         #map.browser.clearfix
 
-        button#toggle_traffic.btn.btn-info.outline-inward.wp2  ShowTraffic
-        button#toggle_weather.btn.btn-info.outline-inward.wp3 ShowWeather
+        button#toggle_traffic.outline-inward.wp2(style='-websit-animation-delay: 0.5s')  ShowTraffic
+        button#toggle_weather.outline-inward.wp3(style='-webkit-animation-delay: 0.10s') ShowWeather
       .input_container.wp1
         .row
           .col-xs-4
@@ -30,7 +30,7 @@ block content
             input#lat(ng-model='Lat', type="hidden", name="lat")
             input#lng(ng-model='Lng', type="hidden", name="lng")
             input.form-control#name(type='text', name='name', autofocus=true, placeholder='Nashville')
-            button#toggle_showshooshi.btn.btn-success(type='submit') ShowShooshi!
+            button#toggle_showshooshi.btn.btn-success(type='submit' data-hover="Hello") ShowShooshi!
             form(role='form')
             .form-group
               label(for='name')
@@ -38,19 +38,26 @@ block content
               label(for='name')
               input.form-control#type(type='text', name='type', placeholder='Type')
           .col-xs-4
-    // /container
+
+  .row
+  .col-xs-4
+  .col-xs-4
+    section.color-4
+        nav.cl-effect-11
+          a.footerButton.wp4(href='https://github.com/MikeBBarreiro', data-hover='GitHub' style='-webit-animation-delay: 0.5s;') Github
+          a.footerButton.wp4(href='https://www.linkedin.com/profile/view?id=221590218&trk=nav_responsive_tab_profile_pic', data-hover='LinkedIn' style='-webkit-animation-delay: 0.35s;') LinkedIn
+          a.footerButton.wp4(href='https://twitter.com/l8MikeBl8', data-hover='Twitter' style='-webkit-animation-delay: 0.15s;') Twitter
+  .col-xs-4
+
+
+///////////-------------------\\\\\\\\\\\
+  //-.container
   //-.container.demo-2
   //-.content
     //-#large-header.large-header
       //-canvas#demo-canvas
     //-.codrops-top.clearfix
-      //-a.codrops-icon.codrops-icon-prev(href='http://tympanus.net/Development/OffCanvasMenuEffects/')
-        //-span Previous Demo
-      //-a.codrops-icon.codrops-icon-drop(href='http://tympanus.net/codrops/?p=20153')
-        //-span Back to the Codrops Article
-    //-.codrops-header
-  //-// Related demos
-  //-section.related
+
 
 
 block scripts
