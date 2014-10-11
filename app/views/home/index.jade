@@ -1,8 +1,14 @@
 extends ../shared/template
 block content
-  //-img.leaves(src='/img/leaves.png')
-  h2.animated.fadeInDown(style='-webkit-animation-delay: 4s;') ショー寿司
-  .japDivide
+  img.leaves.animated.fadeIn(src='/img/leaves.png' style='-webkit-animation-delay: 4.95s;')
+  .row
+  .col-xs-4
+    h2.leftH2.animated.fadeInDown(style='-webkit-animation-delay: 4.95s;') ショー寿司
+    .japDivide
+  .col-xs-4
+  .col-xs-4
+    h2.rightH2.animated.fadeInDown(style='-webkit-animation-delay: 4.95s;') ようこそ！
+    .japDivideR
   div#ip-container.ip-container
       // initial header
       header.ip-header
@@ -31,8 +37,9 @@ block content
           .col-xs-4
             input#lat(ng-model='Lat', type="hidden", name="lat")
             input#lng(ng-model='Lng', type="hidden", name="lng")
-            input.form-control#name(type='text', name='name', autofocus=true, placeholder='Enter A City Here! 町に入る')
+            input.form-control#name(type='text', name='name', autofocus=true, placeholder='Enter A City Here!        町に入る')
             button#toggle_showshooshi.btn.btn-success(type='submit' data-hover="Hello") ShowShooshi!
+            audio#bleeP(src='/audio/62.mp3' type='audio/mp3')
             form(role='form')
             .form-group
               label(for='name')

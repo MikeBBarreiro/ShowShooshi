@@ -2,7 +2,7 @@
   'use strict';
 
   $(document).ready(function(){
-    //$('#toggle_showshooshi').click(onClick);
+    $('#toggle_showshooshi').click(onClick);
   });
 ////////////////// WAYPOINTS START ///////////////////
 
@@ -32,11 +32,12 @@
 
 ////////////////// WAYPOINTS END ///////////////////
 
-  //function onClick(){
+  function onClick(){
     //debugger;
+    document.getElementById('bleeP').play();
     //var bleep = new Audio();
     //bleep.src = '/audio/bleep.mp3';
-  //}
+  }
 
 })();
 
