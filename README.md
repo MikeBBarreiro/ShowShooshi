@@ -1,4 +1,4 @@
-## name of project
+! [Image](https://www.dropbox.com/s/nt4tqrnwru4bdnr/ShowShooshi.png?dl=0)
 ### Code Badges
 build status icon
 coverage status icon
