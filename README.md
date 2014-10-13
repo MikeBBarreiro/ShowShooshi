@@ -1,4 +1,4 @@
-![showshooshi](https://cloud.githubusercontent.com/assets/7136454/4618342/240f2eca-5309-11e4-84d3-f8ceb600fb48.png)
+### ShowShooshi
 
 ### Code Badges
 build status icon
