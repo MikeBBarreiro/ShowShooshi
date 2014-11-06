@@ -1,6 +1,6 @@
 {
   "firebase": "showshooshi",
-  "public": "app",
+  "public": ".",
   "ignore": [
     "firebase.json",
     "**/.*",

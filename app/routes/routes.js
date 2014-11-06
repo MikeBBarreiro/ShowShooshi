@@ -20,7 +20,7 @@ module.exports = function(app, express){
   app.use(methodOverride());
   app.use(session({store:new RedisStore(), secret:'my super secret key', resave:true, saveUninitialized:true, cookie:{maxAge:null}}));
 
-  app.use(security.authenticate);
+  // app.use(security.authenticate);
   app.use(debug.info);
 
   app.get('/', home.index);
@@ -33,4 +33,3 @@ module.exports = function(app, express){
 
   console.log('Express: Routes Loaded');
 };
-

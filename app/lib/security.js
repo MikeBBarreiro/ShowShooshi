@@ -18,4 +18,3 @@ exports.bounce = function(req, res, next){
     res.redirect('/login');
   }
 };
-
