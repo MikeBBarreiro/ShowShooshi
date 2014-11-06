@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowShooshi</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/demo.css">
+    <link rel="stylesheet" href="/css/effect1.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
+    <link rel="stylesheet" type="text/css" href="css/linkComponent.css">
+    <link rel="stylesheet" href="/css/linkDemo.css">
+    <link rel="stylesheet" href="/css/linkNormalize.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="/js/vendor/modernizr.custom.js"></script>
+    <script src="/js/vendor/pathLoader.js"></script>
+    <script src="/js/vendor/classie.js"></script>
+  </head>
+  <body>
+
+        <img src="/img/leaves.png" style="-webkit-animation-delay: 4.95s;" class="leaves animated fadeIn">
+        <div style="-webkit-animation-delay: 4.95s;" class="string animated bounceInDown"></div><img src="/img/latern.png" style="-webkit-animation-delay: 4.95s;" class="lantern animated bounceInDown">
+        <div style="-webkit-animation-delay: 5s;" class="stringR animated bounceInDown"></div><img src="/img/latern.png" style="-webkit-animation-delay: 5s;" class="lanternR animated bounceInDown">
+        <div style="-webkit-animation-delay: 4.95s;" class="logoCircle animated zoomIn"></div>
+        <div class="row"></div>
+        <div class="col-xs-4">
+          <h2 style="-webkit-animation-delay: 4.95s;" class="leftH2 animated fadeInDown">ショー寿司</h2>
+          <div class="japDivide"></div>
+        </div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <h2 style="-webkit-animation-delay: 4.95s;" class="rightH2 animated fadeInDown">ようこそ！</h2>
+          <div class="japDivideR"></div>
+        </div>
+        <div id="ip-container" class="ip-container">
+          <!-- initial header-->
+          <header class="ip-header">
+            <h1 class="ip-logo">
+              <!--svg.ip-inner(width='100%', height='100%', viewBox='0 0 300 160', preserveAspectRatio='xMidYMin meet', aria-labelledby='logo_title')
+              title#logo_title Delightful Demonstrations by Codrops
+              path(d='M150 0 L75 200 L225 200 Z')
+              --><img src="/img/showshooshi.png" class="ip-inner">
+            </h1>
+            <div class="ip-loader">
+              <svg width="60px" height="60px" viewBox="0 0 80 80" class="ip-inner">
+                <path d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" class="ip-loader-circlebg"></path>
+                <path id="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" class="ip-loader-circle"></path>
+              </svg>
+            </div>
+          </header>
+          <!-- main content-->
+          <div class="ip-main">
+            <h2>Find a place to eat &nbsp;<span class="hue-color-wheel">Sushi!</span></h2>
+            <div id="map" class="browser clearfix"></div>
+            <button id="toggle_traffic" style="-websit-animation-delay: 0.5s" class="outline-inward wp2"> ShowTraffic</button>
+            <button id="toggle_weather" style="-webkit-animation-delay: 0.10s" class="outline-inward wp3">ShowWeather</button>
+          </div>
+          <div class="input_container wp1">
+            <div class="row">
+              <div class="col-xs-4"></div>
+              <div class="col-xs-4">
+                <input id="lat" ng-model="Lat" type="hidden" name="lat">
+                <input id="lng" ng-model="Lng" type="hidden" name="lng">
+                <input id="name" type="text" name="name" autofocus placeholder="Enter A City Here!        町に入る" class="form-control">
+                <button id="toggle_showshooshi" type="submit" data-hover="Hello" class="btn btn-success">ShowShooshi!</button>
+                <form role="form"></form>
+                <div class="form-group">
+                  <label for="name"></label>
+                </div>
+              </div>
+              <div class="col-xs-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <section class="color-4">
+            <nav class="cl-effect-11"><a href="https://github.com/MikeBBarreiro" data-hover="GitHub" style="-webit-animation-delay: 0.5s;" class="footerButton wp4">Github</a><a href="https://www.linkedin.com/profile/view?id=221590218&amp;trk=nav_responsive_tab_profile_pic" data-hover="LinkedIn" style="-webkit-animation-delay: 0.35s;" class="footerButton wp4">LinkedIn</a><a href="https://twitter.com/l8MikeBl8" data-hover="Twitter" style="-webkit-animation-delay: 0.15s;" class="footerButton wp4">Twitter</a></nav>
+          </section>
+        </div>
+        <div class="col-xs-4"></div>
+
+      </body>
+      <!--/////////-------------------\\\\\\\\\\\
+      //-.container
+      //-.container.demo-2
+      //-.content
+        //-#large-header.large-header
+          //-canvas#demo-canvas
+        //-.codrops-top.clearfix
+
+
+
+      -->
+      <script src="/js/user/home.js"></script>
+      <script src="/js/user/main.js"></script>
+      <script src="/js/vendor/demo-2.js"></script>
+      <script src="/js/vendor/jquery-2.1.1.min.js"></script>
+      <script src="/js/vendor/waypoints.min.js"></script>
+      <script src="/js/vendor/bower_components/angular/angular.js"></script>
+      <script src="/js/vendor/async.js"></script>
+      <script src="/js/vendor/underscore-min.js"></script>
+      <script src="/js/vendor/underscore-contrib.min.js"></script>
+      <script src="/js/vendor/moment.min.js"></script>
+      <script src="/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/js/user/home.js"></script>
+      <script src="/js/user/main.js"></script>
+      <script src="/js/vendor/async.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeoZ11zwgmFhUjuUCMN0tnhsZStRQ7xbg&amp;sensor=true"></script>
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places,weather"></script>
+      <script src="/js/vendor/main.js"></script>
+    </html>
