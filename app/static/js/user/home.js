@@ -52,7 +52,7 @@
   function createMarker(place){
     var placeLoc = place.geometry.location,
       marker = new google.maps.Marker({
-        icon: '/img/mapMarker.png',
+        icon: 'static/img/mapMarker.png',
         map: map,
         animation: google.maps.Animation.DROP,
         position: placeLoc
